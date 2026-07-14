@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>We'll Be Right Back — WanderOz Tours</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23E8846A'/><ellipse cx='52' cy='62' rx='22' ry='18' fill='%23C87941'/><ellipse cx='46' cy='66' rx='12' ry='9' fill='%23A0522D' opacity='0.55'/><path d='M70 60 Q86 64 84 80 Q82 90 72 86 Q66 80 68 68 Z' fill='%23C87941' stroke='%23A0522D' stroke-width='2'/><ellipse cx='34' cy='38' rx='13' ry='17' fill='%23C87941' stroke='%23A0522D' stroke-width='2'/><ellipse cx='22' cy='20' rx='6' ry='11' fill='%23C87941' stroke='%23A0522D' stroke-width='2'/><ellipse cx='40' cy='17' rx='5.5' ry='10' fill='%23C87941' stroke='%23A0522D' stroke-width='2'/><ellipse cx='22' cy='20' rx='3' ry='6.5' fill='%23E8B08A'/><ellipse cx='40' cy='17' rx='3' ry='5.5' fill='%23E8B08A'/><ellipse cx='24' cy='42' rx='8' ry='5' fill='%23D4935A'/><circle cx='18' cy='40' r='1.6' fill='%233A1F0A'/><circle cx='27' cy='32' r='2.4' fill='%231A0A00'/><circle cx='26.2' cy='31.2' r='0.8' fill='white'/></svg>" />
+</head>
+<body>
+
+  <!-- ░░ HERO STAGE WRAPPER — confines the outback scene & kangaroo animation
+       to the hero area so they never overlap the footer below ░░ -->
+  <div class="hero-stage">
+
+  <!-- ░░ SITE HEADER (logo top-left, frozen/sticky) ░░ -->
+  <header class="site-header" id="siteHeader">
+    <img src="Logo_WanderOz_Tour_Horizontal.png" alt="WanderOz Tour Logo" class="header-logo" />
+  </header>
+
+  <!-- ░░ STAR FIELD ░░ -->
+  <div class="stars-layer" id="starsLayer" aria-hidden="true"></div>
+  <div class="aurora" aria-hidden="true"></div>
+
+  <!-- ░░ MAIN CONTENT ░░ -->
+  <main class="page-wrapper" role="main">
+
+    <div class="headline-block">
+      <span class="eyebrow">Website Under Maintenance</span>
+      <h1>We're Out in the<br /><em>outback</em> — Back Soon.</h1>
+    </div>
+
+    <div class="outback-divider" aria-hidden="true"></div>
+
+    <p class="body-copy">
+      Our team is currently upgrading your travel experience polishing every trail,
+      every reef, and every red-dust road so your next Australian adventure starts
+      <strong>right here, perfectly planned.</strong>
+      We appreciate your patience and look forward to seeing you soon.
+    </p>
+
+    <div class="progress-section" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Maintenance progress">
+      <div class="progress-label">
+        <span>Maintenance Progress</span>
+        <span class="progress-pct" id="progressPct">0%</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ░░ OUTBACK LANDSCAPE ░░ -->
+  <div class="outback-scene" aria-hidden="true">
+    <svg viewBox="0 0 1440 180" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="horizonGlow" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stop-color="#E8846A" stop-opacity="0.18"/>
+          <stop offset="100%" stop-color="#5C3D20" stop-opacity="1"/>
+        </linearGradient>
+        <linearGradient id="groundGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#8B5E3C"/>
+          <stop offset="100%" stop-color="#3A1F0A"/>
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="1440" height="80" fill="url(#horizonGlow)"/>
+      <ellipse cx="200"  cy="72" rx="90" ry="30" fill="#4A2512" opacity="0.7"/>
+      <rect    x="148"  y="42" width="104" height="30" rx="8" fill="#5C2E0A" opacity="0.75"/>
+      <ellipse cx="1240" cy="68" rx="75" ry="25" fill="#4A2512" opacity="0.7"/>
+      <rect    x="1175" y="43" width="130" height="25" rx="6" fill="#5C2E0A" opacity="0.75"/>
+      <path d="M820 75 Q840 30 880 28 Q930 26 970 30 Q1010 34 1020 75 Z" fill="#6B3318" opacity="0.85"/>
+      <path d="M0 75 Q360 65 720 72 Q1080 80 1440 70 L1440 180 L0 180 Z" fill="url(#groundGrad)"/>
+      <line x1="0" y1="85"  x2="1440" y2="85"  stroke="#A0522D" stroke-width="0.6" opacity="0.25"/>
+      <line x1="0" y1="100" x2="1440" y2="100" stroke="#A0522D" stroke-width="0.4" opacity="0.18"/>
+      <path d="M400 90 Q720 86 1040 92" stroke="#C9A84C" stroke-width="1.5" stroke-dasharray="20,30" fill="none" opacity="0.25"/>
+      <g fill="#4A7C59" opacity="0.75">
+        <ellipse cx="100" cy="82" rx="18" ry="5"/>
+        <line x1="85"  y1="82" x2="75"  y2="68" stroke="#4A7C59" stroke-width="1.5"/>
+        <line x1="100" y1="80" x2="92"  y2="64" stroke="#4A7C59" stroke-width="1.5"/>
+        <line x1="115" y1="82" x2="122" y2="67" stroke="#4A7C59" stroke-width="1.5"/>
+        <ellipse cx="380" cy="84" rx="14" ry="4"/>
+        <line x1="368" y1="84" x2="360" y2="72" stroke="#4A7C59" stroke-width="1.5"/>
+        <line x1="380" y1="82" x2="374" y2="68" stroke="#4A7C59" stroke-width="1.5"/>
+        <line x1="392" y1="84" x2="398" y2="71" stroke="#4A7C59" stroke-width="1.5"/>
+        <ellipse cx="620" cy="80" rx="16" ry="4.5"/>
+        <line x1="607" y1="80" x2="598" y2="66" stroke="#4A7C59" stroke-width="1.5"/>
+        <line x1="620" y1="78" x2="614" y2="63" stroke="#4A7C59" stroke-width="1.5"/>
+        <line x1="634" y1="80" x2="640" y2="65" stroke="#4A7C59" stroke-width="1.5"/>
+        <ellipse cx="900" cy="82" rx="13" ry="4"/>
+        <line x1="889" y1="82" x2="882" y2="70" stroke="#4A7C59" stroke-width="1.5"/>
+        <line x1="900" y1="80" x2="895" y2="66" stroke="#4A7C59" stroke-width="1.5"/>
+        <line x1="911" y1="82" x2="917" y2="69" stroke="#4A7C59" stroke-width="1.5"/>
+        <ellipse cx="1180" cy="83" rx="20" ry="5.5"/>
+        <line x1="1163" y1="83" x2="1154" y2="68" stroke="#4A7C59" stroke-width="1.5"/>
+        <line x1="1180" y1="81" x2="1173" y2="65" stroke="#4A7C59" stroke-width="1.5"/>
+        <line x1="1197" y1="83" x2="1204" y2="68" stroke="#4A7C59" stroke-width="1.5"/>
+        <ellipse cx="1380" cy="80" rx="12" ry="3.5"/>
+        <line x1="1370" y1="80" x2="1364" y2="69" stroke="#4A7C59" stroke-width="1.5"/>
+        <line x1="1380" y1="78" x2="1375" y2="65" stroke="#4A7C59" stroke-width="1.5"/>
+        <line x1="1390" y1="80" x2="1396" y2="68" stroke="#4A7C59" stroke-width="1.5"/>
+      </g>
+      <circle cx="1360" cy="22" r="14" fill="#F5F0E8" opacity="0.9"/>
+      <circle cx="1368" cy="18" r="11" fill="#0F1F3D" opacity="0.9"/>
+      <circle cx="60" cy="18" r="2.5" fill="#FFE8A0" opacity="0.9"/>
+      <line x1="60" y1="12" x2="60" y2="24" stroke="#FFE8A0" stroke-width="0.8" opacity="0.5"/>
+      <line x1="54" y1="18" x2="66" y2="18" stroke="#FFE8A0" stroke-width="0.8" opacity="0.5"/>
+    </svg>
+  </div>
+
+  <!-- ░░ KANGAROO CANVAS ░░ -->
+  <canvas id="kangCanvas" aria-hidden="true" role="presentation"
+          style="position:absolute;bottom:0;left:0;width:100%;pointer-events:none;z-index:6;"></canvas>
+
+  </div>
+  <!-- ░░ END HERO STAGE WRAPPER ░░ -->
+
+  <!-- ░░ SITE FOOTER (logo + contact icons) ░░ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <img src="Logo_WanderOz_Tour_Horizontal.png" alt="WanderOz Tour Logo" class="footer-logo" />
+
+      <div class="footer-socials" aria-label="Contact us">
+        <a class="social-icon" href="mailto:hello@wanderoz.tours" aria-label="Email WanderOz Tours">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6.5C3 5.67 3.67 5 4.5 5h15c.83 0 1.5.67 1.5 1.5v11c0 .83-.67 1.5-1.5 1.5h-15C3.67 18 3 17.33 3 16.5v-10z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M4 6.5l8 6.2 8-6.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="social-icon" href="https://wa.me/61488926337" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.47 14.38c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.13-.42-2.16-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.13-.56.14-.14.32-.36.48-.54.16-.18.21-.3.32-.5.11-.2.05-.38-.02-.52-.07-.14-.62-1.5-.85-2.05-.18-.43-.36-.37-.5-.38-.13-.01-.27-.01-.42-.01-.14 0-.38.05-.59.27-.21.23-.79.78-.79 1.9 0 1.12.81 2.21.93 2.36.11.16 1.6 2.44 3.87 3.33 2.27.89 2.27.6 2.68.56.41-.04 1.34-.55 1.53-1.08.18-.52.18-.97.13-1.06-.05-.09-.18-.14-.36-.21z" fill="currentColor"/><path d="M12.02 2.5c-5.25 0-9.5 4.25-9.5 9.5 0 1.85.53 3.58 1.45 5.04L2.5 21.5l4.62-1.43a9.43 9.43 0 0 0 4.9 1.36c5.25 0 9.5-4.25 9.5-9.5s-4.25-9.43-9.5-9.43z" stroke="currentColor" stroke-width="1.4"/></svg>
+        </a>
+        <a class="social-icon" href="https://www.instagram.com/wanderoz.tours/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" aria-label="WanderOz Tours on Instagram">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+        </a>
+        <a class="social-icon" href="https://www.facebook.com/profile.php?id=61581231693556" target="_blank" rel="noopener noreferrer" aria-label="WanderOz Tours on Facebook">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 21v-7h2.4l.4-2.8h-2.8V9.4c0-.81.22-1.36 1.4-1.36h1.5V5.56C16.9 5.47 16 5.4 14.95 5.4c-2.32 0-3.9 1.42-3.9 4.02V11.2H8.6V14h2.45v7h3.45z" fill="currentColor"/></svg>
+        </a>
+      </div>
+
+      <div class="footer-legal-block">
+        <p class="footer-copy">&copy; <span id="footerYear">2026</span> WanderOz Tours. All rights reserved.</p>
+        <p class="footer-legal">
+            WandrOz Tour is a registered business name of Prayudhi Strategic Consulting Pty Ltd.<br class="mobile-break"> ABN: <a href="https://abr.business.gov.au/ABN/View?abn=36675629071" target="_blank" rel="noopener noreferrer">36 675 629 071</a> | ACN: <a href="https://connectonline.asic.gov.au/RegistrySearch/faces/landing/bySearchId.jspx?searchIdType=BUSN&searchId=683604837" target="_blank" rel="noopener noreferrer">675 629 071</a>
+        </p>
+      </div>
+  </footer>
+
+  <!-- ░░ SCRIPTS ░░ -->
+  <script>
+  /* ════════════════════════════════════════════
+     FROZEN HEADER — add solid shadow once scrolled
+  ════════════════════════════════════════════ */
+  (function () {
+    const header = document.getElementById('siteHeader');
+    function onScroll() {
+      if (window.scrollY > 8) header.classList.add('is-scrolled');
+      else header.classList.remove('is-scrolled');
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+
+  /* ════════════════════════════════════════════
+     FOOTER YEAR
+  ════════════════════════════════════════════ */
+  (function () {
+    const y = document.getElementById('footerYear');
+    if (y) y.textContent = new Date().getFullYear();
+  })();
+
+  /* ════════════════════════════════════════════
+     STAR GENERATOR
+  ════════════════════════════════════════════ */
+  (function () {
+    const layer = document.getElementById('starsLayer');
+    for (let i = 0; i < 160; i++) {
+      const s  = document.createElement('div');
+      const sz = Math.random() * 2.4 + 0.6;
+      s.className = 'star';
+      s.style.cssText = `left:${Math.random()*100}%;top:${Math.random()*70}%;
+        width:${sz}px;height:${sz}px;
+        --duration:${(Math.random()*3+2).toFixed(2)}s;
+        --delay:${(Math.random()*4).toFixed(2)}s;
+        opacity:${Math.random()*0.5+0.1};`;
+      layer.appendChild(s);
+    }
+  })();
+
+  /* ════════════════════════════════════════════
+     PROGRESS BAR
+  ════════════════════════════════════════════ */
+  (function () {
+    const fill   = document.getElementById('progressFill');
+    const pctEl  = document.getElementById('progressPct');
+    const bar    = fill.closest('[role="progressbar"]');
+    const target = 73;
+    let   cur    = 0;
+    const iv = setInterval(function(){
+      cur += (target - cur) * 0.04 + 0.15;
+      if (cur >= target){ cur = target; clearInterval(iv); }
+      const r = Math.round(cur);
+      fill.style.width = r + '%';
+      pctEl.textContent = r + '%';
+      bar.setAttribute('aria-valuenow', r);
+    }, 40);
+  })();
+
+  /* ════════════════════════════════════════════
+     KANGAROO — Canvas 2D hop animation
+  ════════════════════════════════════════════ */
+  (function () {
+    const canvas = document.getElementById('kangCanvas');
+    const ctx    = canvas.getContext('2d');
+
+    /* ── sizing ── */
+    const KANG_W  = 90;   // px, half the SVG width for drawing
+    const KANG_H  = 110;
+    const GROUND  = 90;   // px from bottom of canvas where feet land
+
+    /* ── hop physics ── */
+    const HOP_H   = 52;   // max height of arc (px)
+    const HOP_DX  = 110;  // horizontal distance per hop
+    const HOP_DUR = 520;  // ms per hop
+
+    /* ── limb animation ── */
+    // t = 0..1 within a hop; returns angle in radians for each limb
+    function limbAngle(t, offset) {
+      // sine wave tied to hop cycle
+      return Math.sin((t + offset) * Math.PI * 2) * 0.38;
+    }
+
+    /* state */
+    let x         = -KANG_W;        // current x of kangaroo centre
+    let direction = 1;              // 1 = right, -1 = left
+    let hopStart  = performance.now();
+    let hopStartX = x;
+    let airborne  = false;
+
+    /* dust puff pool */
+    const dusts = [];
+    function spawnDust(px, py) {
+      for (let i = 0; i < 5; i++) {
+        dusts.push({
+          x: px + (Math.random()-0.5)*18,
+          y: py,
+          r: Math.random()*6+3,
+          vx: (Math.random()-0.5)*1.8,
+          vy: -(Math.random()*1.2+0.3),
+          a: 0.7
+        });
+      }
+    }
+
+    /* ── resize canvas to full viewport ── */
+    function resize() {
+      canvas.width  = window.innerWidth;
+      canvas.height = GROUND + KANG_H + 20;
+      canvas.style.height = canvas.height + 'px';
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    /* ── draw one kangaroo frame ──
+       cx, cy  = centre-bottom of kangaroo (feet level)
+       dir     = 1 right / -1 left
+       t       = 0..1 within hop (for limb phase)
+       inAir   = bool (tuck legs when airborne)
+    */
+    function drawKang(cx, cy, dir, t, inAir) {
+      ctx.save();
+      ctx.translate(cx, cy);
+      if (dir === 1) ctx.scale(-1, 1); // flip horizontally so kangaroo faces its direction of travel
+
+      const S = KANG_W / 100; // scale factor (our SVG was 100 wide)
+      ctx.scale(S, S);
+
+      // helper to set fill
+      function F(c){ ctx.fillStyle = c; }
+      function B(c){ ctx.strokeStyle = c; }
+
+      ctx.lineCap = 'round';
+
+      /* ── TAIL ── */
+      const tailAngle = Math.sin(t * Math.PI * 2) * 0.2;
+      ctx.save();
+      ctx.translate(72, -40); // tail pivot relative to feet
+      ctx.rotate(tailAngle);
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.bezierCurveTo(14, 2, 22, 14, 20, 24);
+      ctx.bezierCurveTo(18, 32, 12, 34, 8, 28);
+      ctx.bezierCurveTo(4, 18, 0, 10, 0, 0);
+      F('#C87941'); B('#A0522D'); ctx.lineWidth = 0.8;
+      ctx.fill(); ctx.stroke();
+      ctx.restore();
+
+      /* ── BACK LEGS ──
+         When airborne: tuck forward (knees raised)
+         When landing:  extend back
+      */
+      const legPhase  = inAir ? -0.7 : Math.sin(t * Math.PI * 2) * 0.45;
+      const legPhase2 = inAir ? -0.5 : Math.sin(t * Math.PI * 2 + Math.PI) * 0.45;
+
+      // back leg 1 (darker, behind)
+      ctx.save();
+      ctx.translate(60, -28);
+      ctx.rotate(legPhase2);
+      ctx.beginPath(); ctx.moveTo(0,0); ctx.lineTo(0, 20);
+      B('#A0522D'); ctx.lineWidth = 4; ctx.stroke();
+      ctx.translate(0, 20); ctx.rotate(0.4 + legPhase2 * 0.4);
+      ctx.beginPath(); ctx.moveTo(0,0); ctx.lineTo(0, 14);
+      B('#A0522D'); ctx.lineWidth = 3.5; ctx.stroke();
+      ctx.translate(0, 14); ctx.rotate(-0.5);
+      ctx.beginPath(); ctx.moveTo(0,0); ctx.lineTo(-8, 6);
+      B('#7B3D1E'); ctx.lineWidth = 2.5; ctx.stroke();
+      ctx.restore();
+
+      // back leg 2 (lighter, front)
+      ctx.save();
+      ctx.translate(62, -30);
+      ctx.rotate(legPhase);
+      ctx.beginPath(); ctx.moveTo(0,0); ctx.lineTo(0, 20);
+      B('#C87941'); ctx.lineWidth = 4; ctx.stroke();
+      ctx.translate(0, 20); ctx.rotate(0.3 + legPhase * 0.4);
+      ctx.beginPath(); ctx.moveTo(0,0); ctx.lineTo(0, 14);
+      B('#C87941'); ctx.lineWidth = 3.5; ctx.stroke();
+      ctx.translate(0, 14); ctx.rotate(-0.5);
+      ctx.beginPath(); ctx.moveTo(0,0); ctx.lineTo(-7, 6);
+      B('#A0522D'); ctx.lineWidth = 2.5; ctx.stroke();
+      ctx.restore();
+
+      /* ── BODY ── */
+      ctx.save();
+      ctx.translate(52, -50);
+      F('#C87941'); B('#A0522D'); ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.ellipse(0, 0, 22, 18, 0, 0, Math.PI*2);
+      ctx.fill(); ctx.stroke();
+      // belly
+      ctx.globalAlpha = 0.5;
+      F('#D4935A');
+      ctx.beginPath(); ctx.ellipse(-6, 2, 12, 10, 0, 0, Math.PI*2);
+      ctx.fill();
+      // pouch
+      ctx.globalAlpha = 0.6;
+      F('#A0522D');
+      ctx.beginPath();
+      ctx.moveTo(-6, 4); ctx.quadraticCurveTo(-2, 12, 6, 8);
+      ctx.quadraticCurveTo(4, 0, -4, 0); ctx.closePath();
+      ctx.fill();
+      ctx.globalAlpha = 1;
+      ctx.restore();
+
+      /* ── FRONT ARMS ── */
+      const armPhase  = inAir ? -0.5 : Math.sin(t * Math.PI * 2 + 0.3) * 0.4;
+      const armPhase2 = inAir ? -0.3 : Math.sin(t * Math.PI * 2 + 0.3 + Math.PI) * 0.4;
+
+      ctx.save();
+      ctx.translate(38, -58);
+      ctx.rotate(armPhase2);
+      ctx.beginPath(); ctx.moveTo(0,0); ctx.lineTo(-8, 14);
+      B('#A0522D'); ctx.lineWidth = 3; ctx.stroke();
+      ctx.translate(-8, 14); ctx.rotate(0.3);
+      ctx.beginPath(); ctx.moveTo(0,0); ctx.lineTo(-6, 4);
+      B('#A0522D'); ctx.lineWidth = 2.5; ctx.stroke();
+      ctx.restore();
+
+      ctx.save();
+      ctx.translate(40, -60);
+      ctx.rotate(armPhase);
+      ctx.beginPath(); ctx.moveTo(0,0); ctx.lineTo(-6, 13);
+      B('#C87941'); ctx.lineWidth = 3; ctx.stroke();
+      ctx.translate(-6, 13); ctx.rotate(0.3);
+      ctx.beginPath(); ctx.moveTo(0,0); ctx.lineTo(-6, 5);
+      B('#C87941'); ctx.lineWidth = 2.5; ctx.stroke();
+      ctx.restore();
+
+      /* ── HEAD & NECK ── */
+      ctx.save();
+      ctx.translate(36, -72);
+      ctx.rotate(-0.21); // slight forward lean
+      F('#C87941'); B('#A0522D'); ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.ellipse(0, 0, 10, 14, 0, 0, Math.PI*2);
+      ctx.fill(); ctx.stroke();
+      // snout
+      ctx.save();
+      ctx.translate(-12, -8);
+      ctx.rotate(-0.21);
+      F('#D4935A');
+      ctx.beginPath(); ctx.ellipse(0, 0, 8, 5, 0, 0, Math.PI*2);
+      ctx.fill();
+      // nostril
+      F('#3A1F0A');
+      ctx.beginPath(); ctx.arc(-3, -2, 1.5, 0, Math.PI*2); ctx.fill();
+      ctx.restore();
+      // eye
+      F('#1A0A00');
+      ctx.beginPath(); ctx.arc(-8, -12, 2.2, 0, Math.PI*2); ctx.fill();
+      F('white'); ctx.globalAlpha = 0.9;
+      ctx.beginPath(); ctx.arc(-9, -13, 0.8, 0, Math.PI*2); ctx.fill();
+      ctx.globalAlpha = 1;
+      ctx.restore();
+
+      /* ── EARS ── */
+      // ear 1 (front)
+      ctx.save();
+      ctx.translate(34, -83);
+      ctx.rotate(-0.14);
+      F('#C87941'); B('#A0522D'); ctx.lineWidth = 0.8;
+      ctx.beginPath(); ctx.ellipse(0, 0, 4.5, 9, 0, 0, Math.PI*2);
+      ctx.fill(); ctx.stroke();
+      F('#E8B08A');
+      ctx.beginPath(); ctx.ellipse(0, 0, 2.5, 5.5, 0, 0, Math.PI*2);
+      ctx.fill();
+      ctx.restore();
+      // ear 2 (back)
+      ctx.save();
+      ctx.translate(42, -81);
+      ctx.rotate(0.07);
+      F('#C87941'); B('#A0522D'); ctx.lineWidth = 0.8;
+      ctx.beginPath(); ctx.ellipse(0, 0, 4, 8, 0, 0, Math.PI*2);
+      ctx.fill(); ctx.stroke();
+      F('#E8B08A');
+      ctx.beginPath(); ctx.ellipse(0, 0, 2.2, 5, 0, 0, Math.PI*2);
+      ctx.fill();
+      ctx.restore();
+
+      ctx.restore(); // main translate
+    }
+
+    /* ── main RAF loop ── */
+    function loop(now) {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      const W = canvas.width;
+      const groundY = canvas.height - GROUND; // y of ground on canvas
+
+      /* ── dust particles ── */
+      for (let i = dusts.length - 1; i >= 0; i--) {
+        const d = dusts[i];
+        d.x += d.vx; d.y += d.vy; d.a -= 0.035;
+        if (d.a <= 0){ dusts.splice(i, 1); continue; }
+        ctx.save();
+        ctx.globalAlpha = d.a;
+        ctx.fillStyle = '#8B5E3C';
+        ctx.beginPath();
+        ctx.ellipse(d.x, d.y, d.r, d.r * 0.5, 0, 0, Math.PI*2);
+        ctx.fill();
+        ctx.restore();
+      }
+
+      /* ── hop logic ── */
+      const elapsed  = now - hopStart;
+      const progress = Math.min(elapsed / HOP_DUR, 1); // 0..1
+      const t        = progress; // limb phase
+
+      // parabolic arc: y offset = -4H * t * (t - 1)
+      const yOffset  = -4 * HOP_H * progress * (progress - 1);
+      x = hopStartX + direction * HOP_DX * progress;
+
+      // foot y position
+      const footY = groundY - yOffset;
+
+      // spawn dust on landing
+      const wasAirborne = airborne;
+      airborne = yOffset > 2;
+      if (wasAirborne && !airborne) {
+        spawnDust(x, groundY);
+      }
+
+      // draw shadow
+      const shadowScale = 1 - yOffset / (HOP_H * 1.5);
+      ctx.save();
+      ctx.globalAlpha = 0.18 * shadowScale;
+      ctx.fillStyle = '#3A1F0A';
+      ctx.beginPath();
+      ctx.ellipse(x, groundY + 4, 28 * shadowScale, 7 * shadowScale, 0, 0, Math.PI*2);
+      ctx.fill();
+      ctx.restore();
+
+      // draw kangaroo
+      drawKang(x, footY, direction, t, airborne);
+
+      // hop finished — start next
+      if (progress >= 1) {
+        hopStartX = x;
+        hopStart  = now;
+
+        // reached right edge → flip left, or left edge → flip right
+        const margin = KANG_W * 1.5;
+        if (direction === 1 && x > W + margin) {
+          direction = -1;
+          hopStartX = W + margin * 0.5;
+          x         = hopStartX;
+        } else if (direction === -1 && x < -margin) {
+          direction = 1;
+          hopStartX = -margin * 0.5;
+          x         = hopStartX;
+        }
+      }
+
+      requestAnimationFrame(loop);
+    }
+
+    requestAnimationFrame(loop);
+  })();
+  </script>
+
+</body>
+</html>
